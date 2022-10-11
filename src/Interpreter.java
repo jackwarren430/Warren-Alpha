@@ -23,7 +23,6 @@ public class Interpreter {
 			} else if (cha.equals(")")) {
 				p--;
 				if (p == 0) {
-					System.out.println("solving: " + helper + "\n");
 					str += interpretHelper(helper);
 					helper = "";
 				} else {
@@ -55,6 +54,8 @@ public class Interpreter {
 		return performOp(Double.parseDouble(a_str), Double.parseDouble(b_str), op_str);
 
 	}
+
+
 
 	private static double performOp(double a, double b, String op){
 		if (op.equals("+")) {
