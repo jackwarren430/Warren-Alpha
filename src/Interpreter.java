@@ -40,9 +40,13 @@ public class Interpreter {
 		String b_str = "";
 		String op_str = "";
 		int i = 0;
+		System.out.println(str);
 		while (!ops.contains(str.substring(i, i + 1))) {
 			a_str += str.substring(i, i + 1);
 			i++;		
+			if (i >= str.length()) {
+				return Double.parseDouble(str);
+			}
 		}
 		op_str = str.substring(i, i + 1);
 		i++;
