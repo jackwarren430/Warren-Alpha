@@ -2,14 +2,40 @@ body {
 
 }
 
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.flex_container {
+	display: flex;
+}
+
 .container {
-	width:1200px;
+	width: 1200px;
 	margin: auto;
 }
 
 .basic_pic {
+	display: block;
 	width: 400px;
-
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .map {
